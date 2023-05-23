@@ -7,20 +7,20 @@ async function register() {
     }
 }
 
-function notifyMe(message, optoions = {}) {
-    if (!("Notification" in window)) {
-        alert("This browser does not support desktop notification")
-    } else if (Notification.permission === "granted") {
-        if (!!message) return new Notification(message, optoions);
-    } else if (Notification.permission !== "denied") {
-        // We need to ask the user for permission
-        Notification.requestPermission().then((permission) => {
-            if (permission === "granted") {
-                new Notification("Thank you :)")
-            }
-        });
-    }
-}
+// function notifyMe(message, optoions = {}) {
+//     if (!("Notification" in window)) {
+//         alert("This browser does not support desktop notification")
+//     } else if (Notification.permission === "granted") {
+//         if (!!message) return new Notification(message, optoions);
+//     } else if (Notification.permission !== "denied") {
+//         // We need to ask the user for permission
+//         Notification.requestPermission().then((permission) => {
+//             if (permission === "granted") {
+//                 new Notification("Thank you :)")
+//             }
+//         });
+//     }
+// }
 
 // addEventListener("notificationclick", (e) => {
 //     console.log(e)
