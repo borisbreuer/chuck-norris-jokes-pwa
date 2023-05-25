@@ -1,4 +1,4 @@
-const cacheVersion = 'v2-chucks-cache'
+const cacheVersion = 'v1-chucks-cache'
 const BASE_URL = location.protocol + '//' + location.host
 
 const resources = [
